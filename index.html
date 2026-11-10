@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f0d1b">
+  <meta name="description" content="Controle suas finanças e acompanhe seu patrimônio pessoal.">
+  <title>Vértice — Controle financeiro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0f0d1b",
+            surface: "#18152c",
+            line: "#2e294e",
+            accent: "#4f46e5"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="boot-screen"><span class="spinner"></span><span>Preparando seu espaço financeiro</span></div>
+  </div>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+</body>
+</html>
